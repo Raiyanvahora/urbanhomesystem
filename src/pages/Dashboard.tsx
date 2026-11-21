@@ -117,7 +117,7 @@ function Stat({ label, value, sub, tone = 'slate' }: { label: string; value: str
   return (
     <Card>
       <div className="text-xs font-semibold uppercase tracking-wide text-slate-500">{label}</div>
-      <div className={`mt-2 break-words text-2xl font-bold sm:text-3xl ${valueCls}`}>{value}</div>
+      <div className={`mt-2 break-words text-xl font-bold sm:text-3xl ${valueCls}`}>{value}</div>
       <div className="mt-1 text-xs text-slate-400">{sub}</div>
     </Card>
   );

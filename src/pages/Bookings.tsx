@@ -164,7 +164,7 @@ export function Bookings({ data, showFinancials, onChanged }: Props) {
       {/* Mobile floating action button */}
       <button
         onClick={() => setEditing('new')}
-        className="fixed bottom-20 right-5 z-30 flex h-14 w-14 items-center justify-center rounded-full bg-brand-600 text-3xl text-white shadow-lg md:hidden"
+        className="fixed bottom-[calc(5rem+env(safe-area-inset-bottom))] right-5 z-30 flex h-14 w-14 items-center justify-center rounded-full bg-brand-600 text-3xl text-white shadow-lg md:hidden"
         aria-label="New booking"
       >
         +

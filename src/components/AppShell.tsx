@@ -96,7 +96,10 @@ export function AppShell({ role, email }: { role: Role; email: string }) {
       </main>
 
       {/* Mobile bottom navigation */}
-      <nav className="fixed inset-x-0 bottom-0 z-30 grid border-t border-slate-200 bg-white md:hidden" style={{ gridTemplateColumns: `repeat(${nav.length}, minmax(0,1fr))` }}>
+      <nav
+        className="fixed inset-x-0 bottom-0 z-30 grid border-t border-slate-200 bg-white pb-[env(safe-area-inset-bottom)] md:hidden"
+        style={{ gridTemplateColumns: `repeat(${nav.length}, minmax(0,1fr))` }}
+      >
         {nav.map((n) => (
           <button
             key={n.id}
